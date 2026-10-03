@@ -8,7 +8,22 @@
     <meta name="theme-color" content="#22284f" />
     <meta name="color-scheme" content="light" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA0OCA0OCc+PHJlY3Qgd2lkdGg9JzQ4JyBoZWlnaHQ9JzQ4JyByeD0nMTAnIGZpbGw9JyMyMjI4NGYnLz48cGF0aCBkPSdNOCAyMmgzMmMwIDktNiAxNC0xNiAxNFM4IDMxIDggMjJ6JyBmaWxsPScjZmY0ZjhiJyBzdHJva2U9JyNmZmZhZjAnIHN0cm9rZS13aWR0aD0nMycvPjxwYXRoIGQ9J00xNyAxOGMzLTMtMy02IDAtOU0yNCAxOGMzLTMtMy02IDAtOU0zMSAxOGMzLTMtMy02IDAtOScgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZjZjNkJyBzdHJva2Utd2lkdGg9JzMnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcvPjwvc3ZnPg==" />
+    <!-- hoppang:brand -->
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hoppang" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Bathtub Blastoff – Privacy, Terms &amp; Support" />
+    <meta property="og:description" content="Privacy policy, terms of use and support for Bathtub Blastoff (날아라 욕조!), a free browser game by Hoppang, an independent developer." />
+    <meta property="og:url" content="https://hoppangdev.github.io/" />
+    <meta property="og:image" content="https://hoppangdev.github.io/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Hoppang: a round steamed-bun mascot over the Hoppang wordmark" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- /hoppang:brand -->
     <style>
       :root {
         --paper: #f4ecdc;
@@ -521,6 +536,38 @@
       .foot.center {
         text-align: center;
       }
+      /* hoppang:brand */
+      .studio {
+        display: inline-block;
+        margin: 0 0 10px;
+        border-radius: 12px;
+      }
+      .studio:hover {
+        background: none;
+      }
+      .studio:hover .studio-mark {
+        transform: rotate(-2deg) scale(1.03);
+      }
+      .studio-mark {
+        display: block;
+        width: auto;
+        height: 56px;
+        transition: transform 0.15s ease-out;
+      }
+      .foot.center .studio {
+        margin-inline: auto;
+      }
+      @media (max-width: 480px) {
+        .studio-mark {
+          height: 48px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .studio-mark {
+          transition: none;
+        }
+      }
+      /* /hoppang:brand */
     </style>
   </head>
   <body>
@@ -588,6 +635,7 @@
     </main>
 
     <footer class="foot center">
+      <!-- hoppang:studio --><p><a class="studio" href="index.html" aria-label="Hoppang"><svg class="studio-mark" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.0 160.6" aria-hidden="true" ><svg x="8.0" y="8.0" width="124.0" height="124.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="hpb0c"><path d="M50 89C30 89 15.5 88.6 12.2 82C8.6 74.8 9.6 62.5 13.8 52.4C19.6 38 33 27.5 50 27.5S80.4 38 86.2 52.4C90.4 62.5 91.4 74.8 87.8 82C84.5 88.6 70 89 50 89Z"/></clipPath><pattern id="hpb0d" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="1.6" cy="1.6" r=".95" fill="#ff9cbc"/></pattern></defs><path d="M1 85 50 77.5 99 85 50 98.6Z" fill="#ff4f8b" transform="translate(2 2)"/><path d="M1 85 50 77.5 99 85 50 98.6Z" fill="#ffcf3d" stroke="#22284f" stroke-width="2.6" stroke-linejoin="round"/><path d="M7 85.6 13.6 84.4M93 85.6 86.4 84.4" fill="none" stroke="#fffaf0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><g><path d="M50 89C30 89 15.5 88.6 12.2 82C8.6 74.8 9.6 62.5 13.8 52.4C19.6 38 33 27.5 50 27.5S80.4 38 86.2 52.4C90.4 62.5 91.4 74.8 87.8 82C84.5 88.6 70 89 50 89Z" fill="#ff4f8b" transform="translate(2.6 2.6)"/><path d="M50 89C30 89 15.5 88.6 12.2 82C8.6 74.8 9.6 62.5 13.8 52.4C19.6 38 33 27.5 50 27.5S80.4 38 86.2 52.4C90.4 62.5 91.4 74.8 87.8 82C84.5 88.6 70 89 50 89Z" fill="#fffaf0"/><g clip-path="url(#hpb0c)"><ellipse cx="50" cy="96" rx="47" ry="13.5" fill="#ffe2bd"/><path d="M0 0H100V100H0ZM85 50A45 45 0 1 0-5 50 45 45 0 1 0 85 50Z" fill="url(#hpb0d)" fill-rule="evenodd"/></g><path d="M24.6 47.6C27.4 41.8 32.4 37.4 38.6 35.4" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M50 89C30 89 15.5 88.6 12.2 82C8.6 74.8 9.6 62.5 13.8 52.4C19.6 38 33 27.5 50 27.5S80.4 38 86.2 52.4C90.4 62.5 91.4 74.8 87.8 82C84.5 88.6 70 89 50 89Z" fill="none" stroke="#22284f" stroke-width="3.6" stroke-linejoin="round"/><g fill="#ff9cbc"><ellipse cx="27.6" cy="68.4" rx="6.3" ry="4.2"/><ellipse cx="72.4" cy="68.4" rx="6.3" ry="4.2"/></g><g fill="#22284f"><ellipse cx="38.5" cy="61" rx="3.8" ry="4.8"/><ellipse cx="61.5" cy="61" rx="3.8" ry="4.8"/></g><g fill="#fffaf0"><circle cx="37.2" cy="58.9" r="1.5"/><circle cx="60.2" cy="58.9" r="1.5"/></g><path d="M45.2 66C47.6 67 52.4 67 54.8 66 54.3 71.3 45.7 71.3 45.2 66Z" fill="#22284f"/><path d="M47 69.1C48.5 67.8 51.5 67.8 53 69.1 51.6 70.2 48.4 70.2 47 69.1Z" fill="#ff4f8b"/><g transform="translate(2.2 2.2)"><path d="M37.6 23.8c-3.7-3.1-3.1-6.4.1-8.8s3.1-5.5.2-8.2M50 22.4c-4-3.4-3.4-7 0-9.6s3.4-6.1.2-9.2M62.4 23.8c-3.7-3.1-3.1-6.4.1-8.8s3.1-5.5.2-8.2" fill="none" stroke="#ff4f8b" stroke-width="7.6" stroke-linecap="round" stroke-linejoin="round"/></g><path d="M37.6 23.8c-3.7-3.1-3.1-6.4.1-8.8s3.1-5.5.2-8.2M50 22.4c-4-3.4-3.4-7 0-9.6s3.4-6.1.2-9.2M62.4 23.8c-3.7-3.1-3.1-6.4.1-8.8s3.1-5.5.2-8.2" fill="none" stroke="#22284f" stroke-width="7.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M37.6 23.8c-3.7-3.1-3.1-6.4.1-8.8s3.1-5.5.2-8.2M50 22.4c-4-3.4-3.4-7 0-9.6s3.4-6.1.2-9.2M62.4 23.8c-3.7-3.1-3.1-6.4.1-8.8s3.1-5.5.2-8.2" fill="none" stroke="#fffaf0" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></g></svg><svg x="136.0" y="52.6" width="327.0" height="100.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327 100" aria-hidden="true" ><g fill="none" stroke-linecap="round" stroke-linejoin="round"><g stroke="#ff4f8b" stroke-width="20" transform="translate(4.6 4.6)"><path d="M0 16V64M26 16V64M0 40.5H26" transform="translate(11 -1) rotate(-5 13 49)"/><path d="M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0" transform="translate(53 1.2) rotate(4 15 49)"/><path d="M0 34V82M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0" transform="translate(99 0) rotate(-3 15 49)"/><path d="M0 34V82M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0" transform="translate(145 1.4) rotate(4.5 15 49)"/><path d="M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0M30 34V64" transform="translate(191 -0.6) rotate(-4 15 49)"/><path d="M0 64V34M0 48a14 14 0 0 1 28 0V64" transform="translate(237 1) rotate(3 14 49)"/><path d="M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0M30 34V71C30 86 7.5 87.6 3 78.4" transform="translate(281 0) rotate(-3 15 49)"/></g><g stroke="#22284f" stroke-width="20"><path d="M0 16V64M26 16V64M0 40.5H26" transform="translate(11 -1) rotate(-5 13 49)"/><path d="M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0" transform="translate(53 1.2) rotate(4 15 49)"/><path d="M0 34V82M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0" transform="translate(99 0) rotate(-3 15 49)"/><path d="M0 34V82M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0" transform="translate(145 1.4) rotate(4.5 15 49)"/><path d="M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0M30 34V64" transform="translate(191 -0.6) rotate(-4 15 49)"/><path d="M0 64V34M0 48a14 14 0 0 1 28 0V64" transform="translate(237 1) rotate(3 14 49)"/><path d="M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0M30 34V71C30 86 7.5 87.6 3 78.4" transform="translate(281 0) rotate(-3 15 49)"/></g><g stroke="#fffaf0" stroke-width="12"><path d="M0 16V64M26 16V64M0 40.5H26" transform="translate(11 -1) rotate(-5 13 49)"/><path d="M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0" transform="translate(53 1.2) rotate(4 15 49)"/><path d="M0 34V82M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0" transform="translate(99 0) rotate(-3 15 49)"/><path d="M0 34V82M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0" transform="translate(145 1.4) rotate(4.5 15 49)"/><path d="M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0M30 34V64" transform="translate(191 -0.6) rotate(-4 15 49)"/><path d="M0 64V34M0 48a14 14 0 0 1 28 0V64" transform="translate(237 1) rotate(3 14 49)"/><path d="M0 49a15 15 0 1 0 30 0a15 15 0 1 0-30 0M30 34V71C30 86 7.5 87.6 3 78.4" transform="translate(281 0) rotate(-3 15 49)"/></g></g></svg></svg></a></p><!-- /hoppang:studio -->
       <p><span class="nw">Last updated <time datetime="2026-10-03">2026-10-03</time></span> · <span class="nw" lang="ko">최종 수정일 <time datetime="2026-10-03">2026-10-03</time></span></p>
     </footer>
   </body>
