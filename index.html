@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bathtub Blastoff – Privacy, Terms &amp; Support</title>
+    <meta name="description" content="Privacy policy, terms of use and support for Bathtub Blastoff (날아라 욕조!), a free browser game by Hoppang, an independent developer." />
+    <meta name="theme-color" content="#22284f" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA0OCA0OCc+PHJlY3Qgd2lkdGg9JzQ4JyBoZWlnaHQ9JzQ4JyByeD0nMTAnIGZpbGw9JyMyMjI4NGYnLz48cGF0aCBkPSdNOCAyMmgzMmMwIDktNiAxNC0xNiAxNFM4IDMxIDggMjJ6JyBmaWxsPScjZmY0ZjhiJyBzdHJva2U9JyNmZmZhZjAnIHN0cm9rZS13aWR0aD0nMycvPjxwYXRoIGQ9J00xNyAxOGMzLTMtMy02IDAtOU0yNCAxOGMzLTMtMy02IDAtOU0zMSAxOGMzLTMtMy02IDAtOScgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZjZjNkJyBzdHJva2Utd2lkdGg9JzMnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcvPjwvc3ZnPg==" />
+    <style>
+      :root {
+        --paper: #f4ecdc;
+        --paper-dark: #e6d8bd;
+        --card: #fffaf0;
+        --navy: #22284f;
+        --navy-soft: #3a4378;
+        --pink: #ff4f8b;
+        --teal: #1aa6a0;
+        --teal-soft: #7fd3c7;
+        --yellow: #ffcf3d;
+        --orange: #ff7a3a;
+        --head: 'Arial Black', 'Segoe UI Black', 'Helvetica Neue', system-ui, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+        --text: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+        color-scheme: light;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        color: var(--navy);
+        font: 17px/1.65 var(--text);
+        background-color: var(--paper);
+        /* two halftone screens, printed slightly out of register */
+        background-image: radial-gradient(rgba(34, 40, 79, 0.08) 1.2px, transparent 1.5px),
+          radial-gradient(rgba(255, 79, 139, 0.1) 1.2px, transparent 1.5px);
+        background-size: 11px 11px;
+        background-position: 0 0, 5px 6px;
+        overflow-wrap: break-word;
+      }
+      html:lang(ko) body {
+        line-height: 1.75;
+      }
+      :lang(ko) {
+        word-break: keep-all;
+      }
+      p {
+        margin: 0 0 0.9em;
+      }
+      ul,
+      ol {
+        margin: 0 0 1em;
+        padding-left: 1.35em;
+      }
+      li {
+        margin: 0.35em 0;
+      }
+      ul > li::marker {
+        color: var(--pink);
+      }
+      b,
+      strong {
+        font-weight: 800;
+      }
+      a {
+        color: var(--navy);
+        text-decoration: underline;
+        text-decoration-color: var(--pink);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+      }
+      a:hover {
+        background: var(--yellow);
+        text-decoration-color: var(--navy);
+      }
+      :focus-visible {
+        outline: 3px solid var(--navy);
+        outline-offset: 3px;
+        border-radius: 4px;
+      }
+      code {
+        padding: 0.05em 0.35em;
+        font: 0.88em/1.4 ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace;
+        white-space: nowrap;
+        background: var(--paper);
+        border: 1px solid rgba(34, 40, 79, 0.2);
+        border-radius: 6px;
+      }
+      time,
+      .nw {
+        white-space: nowrap;
+      }
+      .skip {
+        position: absolute;
+        left: 12px;
+        top: -80px;
+        z-index: 5;
+        padding: 10px 14px;
+        font: 900 14px/1.2 var(--head);
+        color: var(--navy);
+        background: var(--yellow);
+        border: 2px solid var(--navy);
+        border-radius: 10px;
+        text-decoration: none;
+      }
+      .skip:focus {
+        top: 12px;
+      }
+
+      /* ---------------------------------------------------------------- header */
+      .top {
+        position: relative;
+        margin-bottom: 40px;
+        padding: 14px 16px 16px;
+        color: var(--card);
+        background-color: var(--navy);
+        background-image: radial-gradient(rgba(255, 79, 139, 0.22) 1.5px, transparent 1.8px);
+        background-size: 12px 12px;
+      }
+      /* scalloped hem like a bathhouse door curtain; the pink copy sits a little off register */
+      .top::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -14px;
+        height: 15px;
+        background: radial-gradient(circle at 11px 0, var(--navy) 10px, transparent 10.5px) 0 0 / 22px 12px repeat-x,
+          radial-gradient(circle at 11px 0, var(--pink) 10px, transparent 10.5px) 3px 3px / 22px 12px repeat-x;
+      }
+      .top :focus-visible {
+        outline-color: var(--yellow);
+      }
+      .top-in {
+        max-width: 880px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto auto;
+        grid-template-areas: 'brand nav lang';
+        align-items: center;
+        gap: 12px 18px;
+      }
+      .brand {
+        grid-area: brand;
+        justify-self: start;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+        color: var(--card);
+        text-decoration: none;
+      }
+      .brand:hover {
+        background: none;
+      }
+      .mark {
+        flex: none;
+        width: 46px;
+        height: 46px;
+      }
+      .brand-name {
+        font: 900 20px/1.05 var(--head);
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 0 var(--pink);
+      }
+      .nav {
+        grid-area: nav;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .nav a,
+      .lang {
+        display: inline-block;
+        padding: 9px 14px;
+        font: 900 14px/1.2 var(--head);
+        color: var(--navy);
+        background: var(--card);
+        border: 2px solid var(--card);
+        border-radius: 999px;
+        box-shadow: 3px 3px 0 var(--pink);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .nav a:hover {
+        background: var(--teal-soft);
+        border-color: var(--teal-soft);
+      }
+      .nav a[aria-current='page'] {
+        background: var(--yellow);
+        border-color: var(--yellow);
+      }
+      .lang {
+        grid-area: lang;
+        color: var(--yellow);
+        background: transparent;
+        border-color: var(--yellow);
+        box-shadow: 3px 3px 0 var(--teal);
+      }
+      .lang:hover {
+        background: rgba(255, 207, 61, 0.18);
+      }
+
+      /* ---------------------------------------------------------------- the printed sheet */
+      .sheet {
+        width: min(800px, 100% - 24px);
+        margin: 0 auto 30px;
+        padding: clamp(20px, 5vw, 42px);
+        background: var(--card);
+        border: 3px solid var(--navy);
+        border-radius: 22px;
+        box-shadow: 6px 6px 0 var(--navy);
+      }
+      .head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px 18px;
+        margin-bottom: 16px;
+      }
+      h1 {
+        margin: 0;
+        font: 900 clamp(29px, 7vw, 42px)/1.1 var(--head);
+        text-shadow: 3px 3px 0 var(--pink);
+      }
+      .stamp {
+        margin: 6px 0 0;
+        padding: 6px 10px;
+        font: 900 12.5px/1.2 var(--head);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        background: var(--yellow);
+        border: 2px solid var(--navy);
+        border-radius: 8px;
+        box-shadow: 3px 3px 0 var(--navy);
+        transform: rotate(-2.5deg);
+      }
+      .lead {
+        font-size: 1.06em;
+      }
+      .sheet h2 {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 1.9em 0 0.5em;
+        font: 900 clamp(19px, 4.4vw, 22px)/1.3 var(--head);
+      }
+      .sheet h2 .n {
+        flex: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        margin-top: -1px;
+        border-radius: 50%;
+        font-size: 14px;
+        color: var(--yellow);
+        background: var(--navy);
+      }
+      .short {
+        margin: 22px 0 6px;
+        padding: 16px 20px 6px;
+        background: #ddf2ee;
+        border: 3px solid var(--navy);
+        border-radius: 16px;
+        box-shadow: 4px 4px 0 var(--teal);
+      }
+      .sheet .short h2 {
+        display: block;
+        margin: 0 0 6px;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .policies li {
+        margin: 0.25em 0;
+      }
+
+      /* ---------------------------------------------------------------- footer */
+      .foot {
+        width: min(800px, 100% - 24px);
+        margin: 0 auto 36px;
+        font-size: 14.5px;
+        line-height: 1.6;
+        color: var(--navy-soft);
+      }
+      .foot p {
+        margin: 0 0 6px;
+      }
+
+      @media (max-width: 760px) {
+        .top-in {
+          grid-template-columns: minmax(0, 1fr) auto;
+          grid-template-areas: 'brand lang' 'nav nav';
+        }
+      }
+      @media (max-width: 480px) {
+        body {
+          font-size: 16px;
+        }
+        .mark {
+          width: 40px;
+          height: 40px;
+        }
+        .brand-name {
+          font-size: 17px;
+        }
+        .nav {
+          gap: 8px;
+        }
+        .nav a,
+        .lang {
+          padding: 8px 11px;
+          font-size: 13px;
+        }
+      }
+      @media print {
+        body {
+          background: none;
+          font-size: 11pt;
+        }
+        .top {
+          margin: 0 0 12pt;
+          padding: 0;
+          color: #000;
+          background: none;
+        }
+        .top::after,
+        .nav,
+        .lang,
+        .skip,
+        .btn {
+          display: none;
+        }
+        .brand {
+          color: #000;
+        }
+        .brand-name,
+        h1 {
+          text-shadow: none;
+        }
+        .sheet,
+        .short {
+          width: auto;
+          padding: 0;
+          border: 0;
+          box-shadow: none;
+          background: none;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+
+      /* ---------------------------------------------------------------- landing page */
+      .hero {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 44px;
+        padding: 46px 16px 52px;
+        text-align: center;
+        background-color: var(--navy);
+        background-image: radial-gradient(rgba(255, 79, 139, 0.22) 1.5px, transparent 1.8px);
+        background-size: 12px 12px;
+      }
+      .hero-wrap {
+        position: relative;
+      }
+      .hero-wrap::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -14px;
+        height: 15px;
+        background: radial-gradient(circle at 11px 0, var(--navy) 10px, transparent 10.5px) 0 0 / 22px 12px repeat-x,
+          radial-gradient(circle at 11px 0, var(--pink) 10px, transparent 10.5px) 3px 3px / 22px 12px repeat-x;
+      }
+      .sun {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 300px;
+        height: 300px;
+        margin: -185px 0 0 10px;
+        border-radius: 50%;
+        background-color: var(--yellow);
+        background-image: radial-gradient(rgba(255, 122, 58, 0.55) 1.7px, transparent 2px);
+        background-size: 9px 9px;
+        box-shadow: -7px 7px 0 rgba(255, 79, 139, 0.6);
+      }
+      .logo {
+        position: relative;
+        margin: 0;
+        transform: rotate(-4deg);
+      }
+      .logo span {
+        display: block;
+        font: 900 clamp(40px, 11.5vw, 84px)/0.98 var(--head);
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: var(--card);
+        -webkit-text-stroke: clamp(6px, 1.4vw, 10px) var(--navy);
+        paint-order: stroke fill;
+        text-shadow: 6px 6px 0 var(--pink);
+      }
+      .logo .l2 {
+        color: var(--yellow);
+        text-shadow: 6px 6px 0 var(--teal);
+      }
+      .tag {
+        position: relative;
+        display: inline-block;
+        margin: 22px 0 0;
+        padding: 6px 16px;
+        font: 900 clamp(18px, 4.6vw, 22px)/1.3 var(--head);
+        color: var(--navy);
+        background: var(--card);
+        border: 3px solid var(--navy);
+        border-radius: 12px;
+        box-shadow: 4px 4px 0 var(--pink);
+      }
+      .duo {
+        width: min(980px, 100% - 24px);
+        margin: 0 auto 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+        gap: 26px;
+      }
+      .panel {
+        padding: 20px clamp(16px, 4vw, 26px) 10px;
+        background-color: var(--paper);
+        background-image: radial-gradient(rgba(34, 40, 79, 0.09) 1.3px, transparent 1.6px);
+        background-size: 10px 10px;
+        border: 4px solid var(--navy);
+        border-radius: 22px;
+        box-shadow: 8px 8px 0 var(--navy);
+      }
+      .panel h2 {
+        display: inline-block;
+        margin: 0 0 12px;
+        padding: 3px 12px;
+        font: 900 15px/1.3 var(--head);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--yellow);
+        background: var(--navy);
+        border-radius: 8px;
+        transform: rotate(-2deg);
+      }
+      .links {
+        display: grid;
+        gap: 14px;
+        margin: 16px 0 18px;
+        padding: 0;
+        list-style: none;
+      }
+      .links li {
+        margin: 0;
+      }
+      .links a {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 10px 14px 10px 10px;
+        color: var(--navy);
+        text-decoration: none;
+        background: var(--card);
+        border: 3px solid var(--navy);
+        border-radius: 16px;
+        box-shadow: 5px 5px 0 var(--navy);
+      }
+      .links a:hover {
+        background: #fff1bf;
+      }
+      .links a:active {
+        transform: translate(3px, 3px);
+        box-shadow: 2px 2px 0 var(--navy);
+      }
+      .links .ico {
+        flex: none;
+        width: 54px;
+        height: 54px;
+        padding: 7px;
+        background: var(--paper-dark);
+        border: 3px solid var(--navy);
+        border-radius: 14px;
+      }
+      .links .ico svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .links b {
+        display: block;
+        font: 900 18px/1.25 var(--head);
+      }
+      .links small {
+        display: block;
+        margin-top: 2px;
+        font-size: 14.5px;
+        line-height: 1.4;
+        color: var(--navy-soft);
+      }
+      .contact {
+        font-size: 15.5px;
+      }
+      .foot.center {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="hero-wrap">
+      <header class="hero">
+        <div class="sun" aria-hidden="true"></div>
+        <h1 class="logo"><span class="l1">Bathtub</span> <span class="l2">Blastoff</span></h1>
+        <p class="tag" lang="ko">날아라 욕조!</p>
+      </header>
+    </div>
+
+    <main id="main" class="duo">
+      <section class="panel" aria-labelledby="en">
+        <h2 id="en">English</h2>
+        <p>Bathtub Blastoff is a free browser game made by Hoppang, an independent developer. This little site only holds the game’s policies and help.</p>
+        <ul class="links">
+          <li>
+            <a href="privacy.html">
+              <span class="ico"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M10.5 14.5v-3.5a5.5 5.5 0 0 1 11 0v3.5" fill="none" stroke="#22284f" stroke-width="3" stroke-linecap="round" /><rect x="6.5" y="14" width="19" height="13.5" rx="3.5" fill="#ff4f8b" stroke="#22284f" stroke-width="2.5" /><path d="M16 19.2v3.4" stroke="#22284f" stroke-width="3" stroke-linecap="round" /></svg></span>
+              <span><b>Privacy Policy</b><small>What the game saves, and who runs the ads</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="terms.html">
+              <span class="ico"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M8 4.5h11.5l5 5v18H8z" fill="#fffaf0" stroke="#22284f" stroke-width="2.5" stroke-linejoin="round" /><path d="M19.5 4.5v5h5" fill="#7fd3c7" stroke="#22284f" stroke-width="2.5" stroke-linejoin="round" /><path d="M11.8 15h9M11.8 19h9M11.8 23h5.5" stroke="#1aa6a0" stroke-width="2.6" stroke-linecap="round" /></svg></span>
+              <span><b>Terms of Use</b><small>Short, plain rules for playing</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="support.html">
+              <span class="ico"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M5 8a3.5 3.5 0 0 1 3.5-3.5h15A3.5 3.5 0 0 1 27 8v10a3.5 3.5 0 0 1-3.5 3.5H14l-6 5v-5h0.5A3.5 3.5 0 0 1 5 18z" fill="#ffcf3d" stroke="#22284f" stroke-width="2.5" stroke-linejoin="round" /><path d="M13.3 10.6a2.8 2.8 0 1 1 4 2.5c-.9.4-1.3 1-1.3 1.9v.3" fill="none" stroke="#22284f" stroke-width="2.4" stroke-linecap="round" /><circle cx="16" cy="18.3" r="1.4" fill="#22284f" /></svg></span>
+              <span><b>Support</b><small>Controls, common questions and bug reports</small></span>
+            </a>
+          </li>
+        </ul>
+        <p class="contact">Contact: <a href="mailto:hoppangdev@gmail.com">hoppangdev@gmail.com</a></p>
+      </section>
+
+      <section class="panel" lang="ko" aria-labelledby="ko">
+        <h2 id="ko">한국어</h2>
+        <p>날아라 욕조!는 개인 개발자(Hoppang)가 만든 무료 브라우저 게임입니다. 이 작은 사이트에는 게임의 정책과 도움말만 있습니다.</p>
+        <ul class="links">
+          <li>
+            <a href="privacy.ko.html">
+              <span class="ico"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M10.5 14.5v-3.5a5.5 5.5 0 0 1 11 0v3.5" fill="none" stroke="#22284f" stroke-width="3" stroke-linecap="round" /><rect x="6.5" y="14" width="19" height="13.5" rx="3.5" fill="#ff4f8b" stroke="#22284f" stroke-width="2.5" /><path d="M16 19.2v3.4" stroke="#22284f" stroke-width="3" stroke-linecap="round" /></svg></span>
+              <span><b>개인정보처리방침</b><small>게임이 무엇을 저장하는지, 광고는 누가 다루는지</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="terms.ko.html">
+              <span class="ico"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M8 4.5h11.5l5 5v18H8z" fill="#fffaf0" stroke="#22284f" stroke-width="2.5" stroke-linejoin="round" /><path d="M19.5 4.5v5h5" fill="#7fd3c7" stroke="#22284f" stroke-width="2.5" stroke-linejoin="round" /><path d="M11.8 15h9M11.8 19h9M11.8 23h5.5" stroke="#1aa6a0" stroke-width="2.6" stroke-linecap="round" /></svg></span>
+              <span><b>이용약관</b><small>짧고 쉽게 쓴 이용 규칙</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="support.ko.html">
+              <span class="ico"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M5 8a3.5 3.5 0 0 1 3.5-3.5h15A3.5 3.5 0 0 1 27 8v10a3.5 3.5 0 0 1-3.5 3.5H14l-6 5v-5h0.5A3.5 3.5 0 0 1 5 18z" fill="#ffcf3d" stroke="#22284f" stroke-width="2.5" stroke-linejoin="round" /><path d="M13.3 10.6a2.8 2.8 0 1 1 4 2.5c-.9.4-1.3 1-1.3 1.9v.3" fill="none" stroke="#22284f" stroke-width="2.4" stroke-linecap="round" /><circle cx="16" cy="18.3" r="1.4" fill="#22284f" /></svg></span>
+              <span><b>도움말·문의</b><small>조작법, 자주 묻는 질문, 버그 신고</small></span>
+            </a>
+          </li>
+        </ul>
+        <p class="contact">문의: <a href="mailto:hoppangdev@gmail.com">hoppangdev@gmail.com</a></p>
+      </section>
+    </main>
+
+    <footer class="foot center">
+      <p><span class="nw">Last updated <time datetime="2026-10-03">2026-10-03</time></span> · <span class="nw" lang="ko">최종 수정일 <time datetime="2026-10-03">2026-10-03</time></span></p>
+    </footer>
+  </body>
+</html>

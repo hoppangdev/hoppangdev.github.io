@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>도움말·문의 – 날아라 욕조!</title>
+    <meta name="description" content="날아라 욕조! 도움말: 조작법, 소리, 언어, 저장된 진행 상황, 버그 신고 방법." />
+    <meta name="theme-color" content="#22284f" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA0OCA0OCc+PHJlY3Qgd2lkdGg9JzQ4JyBoZWlnaHQ9JzQ4JyByeD0nMTAnIGZpbGw9JyMyMjI4NGYnLz48cGF0aCBkPSdNOCAyMmgzMmMwIDktNiAxNC0xNiAxNFM4IDMxIDggMjJ6JyBmaWxsPScjZmY0ZjhiJyBzdHJva2U9JyNmZmZhZjAnIHN0cm9rZS13aWR0aD0nMycvPjxwYXRoIGQ9J00xNyAxOGMzLTMtMy02IDAtOU0yNCAxOGMzLTMtMy02IDAtOU0zMSAxOGMzLTMtMy02IDAtOScgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZjZjNkJyBzdHJva2Utd2lkdGg9JzMnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcvPjwvc3ZnPg==" />
+    <style>
+      :root {
+        --paper: #f4ecdc;
+        --paper-dark: #e6d8bd;
+        --card: #fffaf0;
+        --navy: #22284f;
+        --navy-soft: #3a4378;
+        --pink: #ff4f8b;
+        --teal: #1aa6a0;
+        --teal-soft: #7fd3c7;
+        --yellow: #ffcf3d;
+        --orange: #ff7a3a;
+        --head: 'Arial Black', 'Segoe UI Black', 'Helvetica Neue', system-ui, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+        --text: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+        color-scheme: light;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        color: var(--navy);
+        font: 17px/1.65 var(--text);
+        background-color: var(--paper);
+        /* two halftone screens, printed slightly out of register */
+        background-image: radial-gradient(rgba(34, 40, 79, 0.08) 1.2px, transparent 1.5px),
+          radial-gradient(rgba(255, 79, 139, 0.1) 1.2px, transparent 1.5px);
+        background-size: 11px 11px;
+        background-position: 0 0, 5px 6px;
+        overflow-wrap: break-word;
+      }
+      html:lang(ko) body {
+        line-height: 1.75;
+      }
+      :lang(ko) {
+        word-break: keep-all;
+      }
+      p {
+        margin: 0 0 0.9em;
+      }
+      ul,
+      ol {
+        margin: 0 0 1em;
+        padding-left: 1.35em;
+      }
+      li {
+        margin: 0.35em 0;
+      }
+      ul > li::marker {
+        color: var(--pink);
+      }
+      b,
+      strong {
+        font-weight: 800;
+      }
+      a {
+        color: var(--navy);
+        text-decoration: underline;
+        text-decoration-color: var(--pink);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+      }
+      a:hover {
+        background: var(--yellow);
+        text-decoration-color: var(--navy);
+      }
+      :focus-visible {
+        outline: 3px solid var(--navy);
+        outline-offset: 3px;
+        border-radius: 4px;
+      }
+      code {
+        padding: 0.05em 0.35em;
+        font: 0.88em/1.4 ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace;
+        white-space: nowrap;
+        background: var(--paper);
+        border: 1px solid rgba(34, 40, 79, 0.2);
+        border-radius: 6px;
+      }
+      time,
+      .nw {
+        white-space: nowrap;
+      }
+      .skip {
+        position: absolute;
+        left: 12px;
+        top: -80px;
+        z-index: 5;
+        padding: 10px 14px;
+        font: 900 14px/1.2 var(--head);
+        color: var(--navy);
+        background: var(--yellow);
+        border: 2px solid var(--navy);
+        border-radius: 10px;
+        text-decoration: none;
+      }
+      .skip:focus {
+        top: 12px;
+      }
+
+      /* ---------------------------------------------------------------- header */
+      .top {
+        position: relative;
+        margin-bottom: 40px;
+        padding: 14px 16px 16px;
+        color: var(--card);
+        background-color: var(--navy);
+        background-image: radial-gradient(rgba(255, 79, 139, 0.22) 1.5px, transparent 1.8px);
+        background-size: 12px 12px;
+      }
+      /* scalloped hem like a bathhouse door curtain; the pink copy sits a little off register */
+      .top::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -14px;
+        height: 15px;
+        background: radial-gradient(circle at 11px 0, var(--navy) 10px, transparent 10.5px) 0 0 / 22px 12px repeat-x,
+          radial-gradient(circle at 11px 0, var(--pink) 10px, transparent 10.5px) 3px 3px / 22px 12px repeat-x;
+      }
+      .top :focus-visible {
+        outline-color: var(--yellow);
+      }
+      .top-in {
+        max-width: 880px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto auto;
+        grid-template-areas: 'brand nav lang';
+        align-items: center;
+        gap: 12px 18px;
+      }
+      .brand {
+        grid-area: brand;
+        justify-self: start;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+        color: var(--card);
+        text-decoration: none;
+      }
+      .brand:hover {
+        background: none;
+      }
+      .mark {
+        flex: none;
+        width: 46px;
+        height: 46px;
+      }
+      .brand-name {
+        font: 900 20px/1.05 var(--head);
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 0 var(--pink);
+      }
+      .nav {
+        grid-area: nav;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .nav a,
+      .lang {
+        display: inline-block;
+        padding: 9px 14px;
+        font: 900 14px/1.2 var(--head);
+        color: var(--navy);
+        background: var(--card);
+        border: 2px solid var(--card);
+        border-radius: 999px;
+        box-shadow: 3px 3px 0 var(--pink);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .nav a:hover {
+        background: var(--teal-soft);
+        border-color: var(--teal-soft);
+      }
+      .nav a[aria-current='page'] {
+        background: var(--yellow);
+        border-color: var(--yellow);
+      }
+      .lang {
+        grid-area: lang;
+        color: var(--yellow);
+        background: transparent;
+        border-color: var(--yellow);
+        box-shadow: 3px 3px 0 var(--teal);
+      }
+      .lang:hover {
+        background: rgba(255, 207, 61, 0.18);
+      }
+
+      /* ---------------------------------------------------------------- the printed sheet */
+      .sheet {
+        width: min(800px, 100% - 24px);
+        margin: 0 auto 30px;
+        padding: clamp(20px, 5vw, 42px);
+        background: var(--card);
+        border: 3px solid var(--navy);
+        border-radius: 22px;
+        box-shadow: 6px 6px 0 var(--navy);
+      }
+      .head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px 18px;
+        margin-bottom: 16px;
+      }
+      h1 {
+        margin: 0;
+        font: 900 clamp(29px, 7vw, 42px)/1.1 var(--head);
+        text-shadow: 3px 3px 0 var(--pink);
+      }
+      .stamp {
+        margin: 6px 0 0;
+        padding: 6px 10px;
+        font: 900 12.5px/1.2 var(--head);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        background: var(--yellow);
+        border: 2px solid var(--navy);
+        border-radius: 8px;
+        box-shadow: 3px 3px 0 var(--navy);
+        transform: rotate(-2.5deg);
+      }
+      .lead {
+        font-size: 1.06em;
+      }
+      .sheet h2 {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 1.9em 0 0.5em;
+        font: 900 clamp(19px, 4.4vw, 22px)/1.3 var(--head);
+      }
+      .sheet h2 .n {
+        flex: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        margin-top: -1px;
+        border-radius: 50%;
+        font-size: 14px;
+        color: var(--yellow);
+        background: var(--navy);
+      }
+      .short {
+        margin: 22px 0 6px;
+        padding: 16px 20px 6px;
+        background: #ddf2ee;
+        border: 3px solid var(--navy);
+        border-radius: 16px;
+        box-shadow: 4px 4px 0 var(--teal);
+      }
+      .sheet .short h2 {
+        display: block;
+        margin: 0 0 6px;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .policies li {
+        margin: 0.25em 0;
+      }
+
+      /* ---------------------------------------------------------------- footer */
+      .foot {
+        width: min(800px, 100% - 24px);
+        margin: 0 auto 36px;
+        font-size: 14.5px;
+        line-height: 1.6;
+        color: var(--navy-soft);
+      }
+      .foot p {
+        margin: 0 0 6px;
+      }
+
+      @media (max-width: 760px) {
+        .top-in {
+          grid-template-columns: minmax(0, 1fr) auto;
+          grid-template-areas: 'brand lang' 'nav nav';
+        }
+      }
+      @media (max-width: 480px) {
+        body {
+          font-size: 16px;
+        }
+        .mark {
+          width: 40px;
+          height: 40px;
+        }
+        .brand-name {
+          font-size: 17px;
+        }
+        .nav {
+          gap: 8px;
+        }
+        .nav a,
+        .lang {
+          padding: 8px 11px;
+          font-size: 13px;
+        }
+      }
+      @media print {
+        body {
+          background: none;
+          font-size: 11pt;
+        }
+        .top {
+          margin: 0 0 12pt;
+          padding: 0;
+          color: #000;
+          background: none;
+        }
+        .top::after,
+        .nav,
+        .lang,
+        .skip,
+        .btn {
+          display: none;
+        }
+        .brand {
+          color: #000;
+        }
+        .brand-name,
+        h1 {
+          text-shadow: none;
+        }
+        .sheet,
+        .short {
+          width: auto;
+          padding: 0;
+          border: 0;
+          box-shadow: none;
+          background: none;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+
+      /* ---------------------------------------------------------------- support page */
+      .mailcard {
+        margin: 22px 0 8px;
+        padding: 16px 20px;
+        background: #fff1bf;
+        border: 3px solid var(--navy);
+        border-radius: 16px;
+        box-shadow: 4px 4px 0 var(--navy);
+      }
+      .mailcard p {
+        margin: 0;
+      }
+      .mailcard .k {
+        font: 900 12.5px/1.2 var(--head);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--navy-soft);
+      }
+      .mailcard .v {
+        margin: 4px 0 6px;
+        font: 900 clamp(18px, 4.6vw, 22px)/1.3 var(--head);
+        overflow-wrap: anywhere;
+      }
+      .mailcard .d {
+        font-size: 15.5px;
+        color: var(--navy-soft);
+      }
+      .keys {
+        display: grid;
+        gap: 10px;
+        margin: 14px 0;
+      }
+      .keys > div {
+        display: grid;
+        grid-template-columns: minmax(0, 12em) minmax(0, 1fr);
+        gap: 6px 16px;
+        align-items: start;
+        padding: 10px 14px;
+        background: var(--paper);
+        border: 2px solid var(--navy);
+        border-radius: 14px;
+      }
+      .keys dt {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        padding-top: 1px;
+      }
+      .keys dd {
+        margin: 0;
+      }
+      kbd,
+      .gest {
+        display: inline-block;
+        font: 900 0.78em/1 var(--head);
+        white-space: nowrap;
+        color: var(--navy);
+        border: 2px solid var(--navy);
+      }
+      kbd {
+        min-width: 2em;
+        padding: 0.38em 0.5em 0.34em;
+        text-align: center;
+        background: var(--card);
+        border-radius: 7px;
+        box-shadow: 2px 2px 0 var(--navy);
+      }
+      p kbd {
+        margin: 0 0.1em;
+        vertical-align: 0.06em;
+      }
+      .gest {
+        padding: 0.38em 0.7em 0.34em;
+        background: var(--teal-soft);
+        border-radius: 999px;
+      }
+      .zone {
+        padding: 0.1em 0.4em;
+        font: 900 0.86em/1 var(--head);
+        white-space: nowrap;
+        background: var(--pink);
+        border: 2px solid var(--navy);
+        border-radius: 6px;
+      }
+      .qa {
+        padding: 14px 0 2px;
+        border-top: 2px dashed rgba(34, 40, 79, 0.25);
+      }
+      .qa:first-of-type {
+        padding-top: 2px;
+        border-top: 0;
+      }
+      .qa h3 {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 0 0 6px;
+        font: 900 17.5px/1.35 var(--head);
+      }
+      .qa .q {
+        flex: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 26px;
+        height: 26px;
+        font-size: 13px;
+        background: var(--pink);
+        border: 2px solid var(--navy);
+        border-radius: 8px;
+        transform: rotate(-5deg);
+      }
+      .steps {
+        list-style: none;
+        padding: 0;
+        counter-reset: step;
+      }
+      .steps li {
+        position: relative;
+        margin: 9px 0;
+        padding-left: 40px;
+        counter-increment: step;
+      }
+      .steps li::before {
+        content: counter(step);
+        position: absolute;
+        left: 0;
+        top: 0.1em;
+        width: 27px;
+        height: 27px;
+        font: 900 13px/23px var(--head);
+        text-align: center;
+        background: var(--yellow);
+        border: 2px solid var(--navy);
+        border-radius: 50%;
+      }
+      .cta {
+        margin: 20px 0 12px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 22px;
+        font: 900 19px/1.2 var(--head);
+        color: var(--card);
+        text-decoration: none;
+        text-shadow: 2px 2px 0 var(--navy);
+        background: var(--pink);
+        border: 3px solid var(--navy);
+        border-radius: 14px;
+        box-shadow: 5px 5px 0 var(--navy);
+      }
+      .btn:hover {
+        background: var(--pink);
+        box-shadow: 6px 6px 0 var(--navy);
+      }
+      .btn:active {
+        transform: translate(3px, 3px);
+        box-shadow: 2px 2px 0 var(--navy);
+      }
+      .small {
+        font-size: 14.5px;
+        color: var(--navy-soft);
+      }
+      /* phones: keys above the explanation; one-word rows (.one) stay side by side */
+      @media (max-width: 560px) {
+        .keys > div {
+          grid-template-columns: minmax(0, 1fr);
+        }
+        .keys > div.one {
+          grid-template-columns: auto minmax(0, 1fr);
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">본문 바로가기</a>
+    <header class="top">
+      <div class="top-in">
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 56 56" aria-hidden="true" focusable="false">
+            <rect x="6" y="6" width="48" height="48" rx="13" fill="#ff4f8b" />
+            <rect x="2" y="2" width="48" height="48" rx="13" fill="#22284f" stroke="#fffaf0" stroke-width="2.5" />
+            <path d="M19.5 21.5c3-3-3-6 0-9M26 21.5c3-3-3-6 0-9M32.5 21.5c3-3-3-6 0-9" fill="none" stroke="#ffcf3d" stroke-width="3" stroke-linecap="round" />
+            <path d="M11 27h30c0 8.6-6 13.5-15 13.5S11 35.6 11 27z" fill="#ff4f8b" stroke="#fffaf0" stroke-width="3" stroke-linejoin="round" />
+            <path d="M9 27h34M17 40.5l-2 4.5M35 40.5l2 4.5" fill="none" stroke="#fffaf0" stroke-width="3" stroke-linecap="round" />
+            <circle cx="42" cy="12.5" r="2.6" fill="none" stroke="#7fd3c7" stroke-width="2" />
+          </svg>
+          <span class="brand-name">날아라 욕조!</span>
+        </a>
+        <nav class="nav" aria-label="페이지">
+          <a href="privacy.ko.html">개인정보처리방침</a>
+          <a href="terms.ko.html">이용약관</a>
+          <a href="support.ko.html" aria-current="page">도움말·문의</a>
+        </nav>
+        <a class="lang" href="support.html" hreflang="en" lang="en">English</a>
+      </div>
+    </header>
+
+    <main id="main" class="sheet">
+      <div class="head">
+        <h1>도움말·문의</h1>
+        <p class="stamp">최종 수정일 <time datetime="2026-10-03">2026-10-03</time></p>
+      </div>
+      <p class="lead">날아라 욕조!는 개인 개발자 한 명(Hoppang)이 만들고 있어요. 문제가 생기면 아래 답변을 먼저 확인해 보시고, 그래도 해결되지 않으면 메일로 알려 주세요. 몇 가지 정보만 함께 적어 주셔도 원인을 찾는 데 큰 도움이 돼요.</p>
+
+      <div class="mailcard">
+        <p class="k">이메일</p>
+        <p class="v"><a href="mailto:hoppangdev@gmail.com">hoppangdev@gmail.com</a></p>
+        <p class="d">버그 신고, 질문, 의견 모두 환영해요.</p>
+      </div>
+
+      <section id="controls">
+        <h2>조작법</h2>
+        <dl class="keys">
+          <div>
+            <dt><span class="gest">탭</span> <span class="gest">클릭</span> <kbd>Space</kbd></dt>
+            <dd><b>발사</b> — 바늘이 <span class="zone">분홍색</span> 구간에 있을 때</dd>
+          </div>
+          <div>
+            <dt><span class="gest">누르고 있기</span></dt>
+            <dd><b>증기 부스트</b> — 비행 중 화면 어디든 누르고 있으면(마우스 버튼, 스페이스도 가능) 보일러가 증기를 뿜어요. 떼면 멈추고 증기를 아낄 수 있어요.</dd>
+          </div>
+          <div>
+            <dt><span class="gest">짧게 탭</span></dt>
+            <dd><b>캐릭터 특기</b> — 공중에서 짧게 탭</dd>
+          </div>
+          <div class="one">
+            <dt><kbd>Esc</kbd> <kbd>P</kbd></dt>
+            <dd><b>일시정지</b></dd>
+          </div>
+          <div class="one">
+            <dt><kbd>M</kbd></dt>
+            <dd><b>음소거</b></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="faq">
+        <h2>자주 묻는 질문</h2>
+        <div class="qa" id="no-sound">
+          <h3><span class="q" aria-hidden="true">Q</span>소리가 안 나요</h3>
+          <p>브라우저는 화면을 한 번 누르기 전까지 페이지가 소리를 내지 못하게 해요. 그래서 음악과 효과음은 처음 탭하거나 클릭한 다음부터 나와요. 그래도 조용하다면 음소거 상태가 아닌지(타이틀 화면의 소리 버튼, <kbd>M</kbd> 키), 목욕탕 게시판 설정의 효과음·음악 볼륨, 기기 볼륨을 차례로 확인해 주세요.</p>
+        </div>
+        <div class="qa" id="language">
+          <h3><span class="q" aria-hidden="true">Q</span>언어를 바꾸고 싶어요</h3>
+          <p>처음 실행할 때 브라우저가 한국어로 설정되어 있으면 한국어로, 아니면 영어로 시작해요. 타이틀 화면의 EN / 한국어 버튼이나 목욕탕 게시판 설정의 ‘언어’에서 언제든 바꿀 수 있어요.</p>
+        </div>
+        <div class="qa" id="progress">
+          <h3><span class="q" aria-hidden="true">Q</span>진행 상황이 사라졌어요</h3>
+          <p>진행 상황은 이 기기의 브라우저에, 게임을 한 사이트마다 따로 저장돼요. 그래서 다른 브라우저나 기기, 다른 사이트에서는 이어지지 않아요(그 사이트가 계정에 저장해 주는 경우는 예외예요). 사이트 데이터를 지웠을 때, ‘진행 초기화’를 눌렀을 때, 저장이 막힌 시크릿 창을 닫았을 때도 사라져요.</p>
+          <p>개발자는 누구의 저장 데이터도 따로 보관하지 않아서 되살려 드릴 수 없어요. 죄송해요.</p>
+        </div>
+        <div class="qa" id="reset">
+          <h3><span class="q" aria-hidden="true">Q</span>처음부터 다시 하고 싶어요</h3>
+          <p>목욕탕 게시판 → 설정 → ‘진행 초기화’를 누르세요. 게시판은 타이틀 화면의 ‘게시판’ 버튼(첫 비행 후에 나타나요)이나 작업실의 게시판 아이콘으로 열 수 있어요. 그 기기의 코인·부품·스테이지·트로피·티켓이 지워지고, 언어와 볼륨 설정은 그대로 남아요.</p>
+        </div>
+        <div class="qa" id="pay">
+          <h3><span class="q" aria-hidden="true">Q</span>돈을 내거나 가입해야 하나요?</h3>
+          <p>아니요. 무료이고 계정도 없어요. 광고는 게임을 하는 사이트가 보여 주고, 보상형 광고는 그 버튼을 눌렀을 때만 나와요. 플랫폼이 선택형 구매를 제공하더라도 게임을 진행하는 데 꼭 필요하지는 않아요.</p>
+        </div>
+        <div class="qa" id="loading">
+          <h3><span class="q" aria-hidden="true">Q</span>로딩 화면에서 멈춰요</h3>
+          <p>페이지를 새로고침해 보세요. 계속 그렇다면 광고 차단기 같은 브라우저 확장 프로그램이 게임 파일을 막고 있을 수 있어요. 그 사이트를 허용하거나 다른 브라우저에서 해 보시고, 그래도 안 되면 아래 방법으로 알려 주세요.</p>
+        </div>
+      </section>
+
+      <section id="bug">
+        <h2>버그 신고</h2>
+        <p>메일 주소는 <a href="mailto:hoppangdev@gmail.com">hoppangdev@gmail.com</a>입니다. 메일에 다음 내용을 적어 주세요.</p>
+        <ol class="steps" role="list">
+          <li><b>기기</b> — 예: 갤럭시 S25, Windows 노트북</li>
+          <li><b>브라우저</b> — Chrome, Safari, 삼성 인터넷 등</li>
+          <li><b>게임을 한 곳</b> — 사이트나 앱 이름. 예: Poki, CrazyGames, Playgama, YouTube</li>
+          <li><b>게임 버전</b> — 타이틀 화면 맨 아래에 있어요. 예: “v0.3.0”</li>
+          <li><b>무슨 일이 있었는지</b> — 바로 전에 무엇을 하고 있었는지도 함께</li>
+          <li><b>스크린샷</b> — 가능하면 첨부해 주세요</li>
+        </ol>
+        <p class="cta"><a class="btn" href="mailto:hoppangdev@gmail.com?subject=%5B%EB%82%A0%EC%95%84%EB%9D%BC%20%EC%9A%95%EC%A1%B0!%5D%20%EB%B2%84%EA%B7%B8%20%EC%8B%A0%EA%B3%A0&amp;body=%EA%B8%B0%EA%B8%B0%3A%0D%0A%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%3A%0D%0A%EA%B2%8C%EC%9E%84%EC%9D%84%20%ED%95%9C%20%EC%82%AC%EC%9D%B4%ED%8A%B8%C2%B7%EC%95%B1%3A%0D%0A%EA%B2%8C%EC%9E%84%20%EB%B2%84%EC%A0%84(%ED%83%80%EC%9D%B4%ED%8B%80%20%ED%99%94%EB%A9%B4%20%EB%A7%A8%20%EC%95%84%EB%9E%98)%3A%0D%0A%EB%AC%B4%EC%8A%A8%20%EC%9D%BC%EC%9D%B4%20%EC%9E%88%EC%97%88%EB%82%98%EC%9A%94%3A%0D%0A%0D%0A(%EA%B0%80%EB%8A%A5%ED%95%98%EB%A9%B4%20%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%EC%9D%84%20%EC%B2%A8%EB%B6%80%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.)%0D%0A">메일로 버그 신고하기</a></p>
+        <p class="small">버튼을 누르면 위 항목이 적힌 메일 쓰기 화면이 열려요. 보내 주신 내용은 답장과 게임 수정에만 써요. 자세한 내용은 <a href="privacy.ko.html#email">개인정보처리방침의 ‘이메일로 문의하실 때’</a>를 참고해 주세요.</p>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p><b>날아라 욕조!</b>는 개인 개발자(Hoppang)가 만듭니다. 문의: <a href="mailto:hoppangdev@gmail.com">hoppangdev@gmail.com</a></p>
+      <p><a href="index.html">전체 페이지</a> · <a href="support.html" hreflang="en" lang="en">English</a></p>
+    </footer>
+  </body>
+</html>

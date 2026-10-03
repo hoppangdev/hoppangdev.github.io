@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>개인정보처리방침 – 날아라 욕조!</title>
+    <meta name="description" content="날아라 욕조!의 개인정보처리방침: 진행 상황은 브라우저에만 저장되고, 게임은 개발자에게 아무것도 보내지 않으며, 광고는 각 포털의 정책을 따릅니다." />
+    <meta name="theme-color" content="#22284f" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA0OCA0OCc+PHJlY3Qgd2lkdGg9JzQ4JyBoZWlnaHQ9JzQ4JyByeD0nMTAnIGZpbGw9JyMyMjI4NGYnLz48cGF0aCBkPSdNOCAyMmgzMmMwIDktNiAxNC0xNiAxNFM4IDMxIDggMjJ6JyBmaWxsPScjZmY0ZjhiJyBzdHJva2U9JyNmZmZhZjAnIHN0cm9rZS13aWR0aD0nMycvPjxwYXRoIGQ9J00xNyAxOGMzLTMtMy02IDAtOU0yNCAxOGMzLTMtMy02IDAtOU0zMSAxOGMzLTMtMy02IDAtOScgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZjZjNkJyBzdHJva2Utd2lkdGg9JzMnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcvPjwvc3ZnPg==" />
+    <style>
+      :root {
+        --paper: #f4ecdc;
+        --paper-dark: #e6d8bd;
+        --card: #fffaf0;
+        --navy: #22284f;
+        --navy-soft: #3a4378;
+        --pink: #ff4f8b;
+        --teal: #1aa6a0;
+        --teal-soft: #7fd3c7;
+        --yellow: #ffcf3d;
+        --orange: #ff7a3a;
+        --head: 'Arial Black', 'Segoe UI Black', 'Helvetica Neue', system-ui, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+        --text: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+        color-scheme: light;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        color: var(--navy);
+        font: 17px/1.65 var(--text);
+        background-color: var(--paper);
+        /* two halftone screens, printed slightly out of register */
+        background-image: radial-gradient(rgba(34, 40, 79, 0.08) 1.2px, transparent 1.5px),
+          radial-gradient(rgba(255, 79, 139, 0.1) 1.2px, transparent 1.5px);
+        background-size: 11px 11px;
+        background-position: 0 0, 5px 6px;
+        overflow-wrap: break-word;
+      }
+      html:lang(ko) body {
+        line-height: 1.75;
+      }
+      :lang(ko) {
+        word-break: keep-all;
+      }
+      p {
+        margin: 0 0 0.9em;
+      }
+      ul,
+      ol {
+        margin: 0 0 1em;
+        padding-left: 1.35em;
+      }
+      li {
+        margin: 0.35em 0;
+      }
+      ul > li::marker {
+        color: var(--pink);
+      }
+      b,
+      strong {
+        font-weight: 800;
+      }
+      a {
+        color: var(--navy);
+        text-decoration: underline;
+        text-decoration-color: var(--pink);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+      }
+      a:hover {
+        background: var(--yellow);
+        text-decoration-color: var(--navy);
+      }
+      :focus-visible {
+        outline: 3px solid var(--navy);
+        outline-offset: 3px;
+        border-radius: 4px;
+      }
+      code {
+        padding: 0.05em 0.35em;
+        font: 0.88em/1.4 ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace;
+        white-space: nowrap;
+        background: var(--paper);
+        border: 1px solid rgba(34, 40, 79, 0.2);
+        border-radius: 6px;
+      }
+      time,
+      .nw {
+        white-space: nowrap;
+      }
+      .skip {
+        position: absolute;
+        left: 12px;
+        top: -80px;
+        z-index: 5;
+        padding: 10px 14px;
+        font: 900 14px/1.2 var(--head);
+        color: var(--navy);
+        background: var(--yellow);
+        border: 2px solid var(--navy);
+        border-radius: 10px;
+        text-decoration: none;
+      }
+      .skip:focus {
+        top: 12px;
+      }
+
+      /* ---------------------------------------------------------------- header */
+      .top {
+        position: relative;
+        margin-bottom: 40px;
+        padding: 14px 16px 16px;
+        color: var(--card);
+        background-color: var(--navy);
+        background-image: radial-gradient(rgba(255, 79, 139, 0.22) 1.5px, transparent 1.8px);
+        background-size: 12px 12px;
+      }
+      /* scalloped hem like a bathhouse door curtain; the pink copy sits a little off register */
+      .top::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -14px;
+        height: 15px;
+        background: radial-gradient(circle at 11px 0, var(--navy) 10px, transparent 10.5px) 0 0 / 22px 12px repeat-x,
+          radial-gradient(circle at 11px 0, var(--pink) 10px, transparent 10.5px) 3px 3px / 22px 12px repeat-x;
+      }
+      .top :focus-visible {
+        outline-color: var(--yellow);
+      }
+      .top-in {
+        max-width: 880px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto auto;
+        grid-template-areas: 'brand nav lang';
+        align-items: center;
+        gap: 12px 18px;
+      }
+      .brand {
+        grid-area: brand;
+        justify-self: start;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+        color: var(--card);
+        text-decoration: none;
+      }
+      .brand:hover {
+        background: none;
+      }
+      .mark {
+        flex: none;
+        width: 46px;
+        height: 46px;
+      }
+      .brand-name {
+        font: 900 20px/1.05 var(--head);
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 0 var(--pink);
+      }
+      .nav {
+        grid-area: nav;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .nav a,
+      .lang {
+        display: inline-block;
+        padding: 9px 14px;
+        font: 900 14px/1.2 var(--head);
+        color: var(--navy);
+        background: var(--card);
+        border: 2px solid var(--card);
+        border-radius: 999px;
+        box-shadow: 3px 3px 0 var(--pink);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .nav a:hover {
+        background: var(--teal-soft);
+        border-color: var(--teal-soft);
+      }
+      .nav a[aria-current='page'] {
+        background: var(--yellow);
+        border-color: var(--yellow);
+      }
+      .lang {
+        grid-area: lang;
+        color: var(--yellow);
+        background: transparent;
+        border-color: var(--yellow);
+        box-shadow: 3px 3px 0 var(--teal);
+      }
+      .lang:hover {
+        background: rgba(255, 207, 61, 0.18);
+      }
+
+      /* ---------------------------------------------------------------- the printed sheet */
+      .sheet {
+        width: min(800px, 100% - 24px);
+        margin: 0 auto 30px;
+        padding: clamp(20px, 5vw, 42px);
+        background: var(--card);
+        border: 3px solid var(--navy);
+        border-radius: 22px;
+        box-shadow: 6px 6px 0 var(--navy);
+      }
+      .head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px 18px;
+        margin-bottom: 16px;
+      }
+      h1 {
+        margin: 0;
+        font: 900 clamp(29px, 7vw, 42px)/1.1 var(--head);
+        text-shadow: 3px 3px 0 var(--pink);
+      }
+      .stamp {
+        margin: 6px 0 0;
+        padding: 6px 10px;
+        font: 900 12.5px/1.2 var(--head);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        background: var(--yellow);
+        border: 2px solid var(--navy);
+        border-radius: 8px;
+        box-shadow: 3px 3px 0 var(--navy);
+        transform: rotate(-2.5deg);
+      }
+      .lead {
+        font-size: 1.06em;
+      }
+      .sheet h2 {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 1.9em 0 0.5em;
+        font: 900 clamp(19px, 4.4vw, 22px)/1.3 var(--head);
+      }
+      .sheet h2 .n {
+        flex: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        margin-top: -1px;
+        border-radius: 50%;
+        font-size: 14px;
+        color: var(--yellow);
+        background: var(--navy);
+      }
+      .short {
+        margin: 22px 0 6px;
+        padding: 16px 20px 6px;
+        background: #ddf2ee;
+        border: 3px solid var(--navy);
+        border-radius: 16px;
+        box-shadow: 4px 4px 0 var(--teal);
+      }
+      .sheet .short h2 {
+        display: block;
+        margin: 0 0 6px;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .policies li {
+        margin: 0.25em 0;
+      }
+
+      /* ---------------------------------------------------------------- footer */
+      .foot {
+        width: min(800px, 100% - 24px);
+        margin: 0 auto 36px;
+        font-size: 14.5px;
+        line-height: 1.6;
+        color: var(--navy-soft);
+      }
+      .foot p {
+        margin: 0 0 6px;
+      }
+
+      @media (max-width: 760px) {
+        .top-in {
+          grid-template-columns: minmax(0, 1fr) auto;
+          grid-template-areas: 'brand lang' 'nav nav';
+        }
+      }
+      @media (max-width: 480px) {
+        body {
+          font-size: 16px;
+        }
+        .mark {
+          width: 40px;
+          height: 40px;
+        }
+        .brand-name {
+          font-size: 17px;
+        }
+        .nav {
+          gap: 8px;
+        }
+        .nav a,
+        .lang {
+          padding: 8px 11px;
+          font-size: 13px;
+        }
+      }
+      @media print {
+        body {
+          background: none;
+          font-size: 11pt;
+        }
+        .top {
+          margin: 0 0 12pt;
+          padding: 0;
+          color: #000;
+          background: none;
+        }
+        .top::after,
+        .nav,
+        .lang,
+        .skip,
+        .btn {
+          display: none;
+        }
+        .brand {
+          color: #000;
+        }
+        .brand-name,
+        h1 {
+          text-shadow: none;
+        }
+        .sheet,
+        .short {
+          width: auto;
+          padding: 0;
+          border: 0;
+          box-shadow: none;
+          background: none;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">본문 바로가기</a>
+    <header class="top">
+      <div class="top-in">
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 56 56" aria-hidden="true" focusable="false">
+            <rect x="6" y="6" width="48" height="48" rx="13" fill="#ff4f8b" />
+            <rect x="2" y="2" width="48" height="48" rx="13" fill="#22284f" stroke="#fffaf0" stroke-width="2.5" />
+            <path d="M19.5 21.5c3-3-3-6 0-9M26 21.5c3-3-3-6 0-9M32.5 21.5c3-3-3-6 0-9" fill="none" stroke="#ffcf3d" stroke-width="3" stroke-linecap="round" />
+            <path d="M11 27h30c0 8.6-6 13.5-15 13.5S11 35.6 11 27z" fill="#ff4f8b" stroke="#fffaf0" stroke-width="3" stroke-linejoin="round" />
+            <path d="M9 27h34M17 40.5l-2 4.5M35 40.5l2 4.5" fill="none" stroke="#fffaf0" stroke-width="3" stroke-linecap="round" />
+            <circle cx="42" cy="12.5" r="2.6" fill="none" stroke="#7fd3c7" stroke-width="2" />
+          </svg>
+          <span class="brand-name">날아라 욕조!</span>
+        </a>
+        <nav class="nav" aria-label="페이지">
+          <a href="privacy.ko.html" aria-current="page">개인정보처리방침</a>
+          <a href="terms.ko.html">이용약관</a>
+          <a href="support.ko.html">도움말·문의</a>
+        </nav>
+        <a class="lang" href="privacy.html" hreflang="en" lang="en">English</a>
+      </div>
+    </header>
+
+    <main id="main" class="sheet">
+      <div class="head">
+        <h1>개인정보처리방침</h1>
+        <p class="stamp">최종 수정일 <time datetime="2026-10-03">2026-10-03</time></p>
+      </div>
+      <p class="lead"><b>날아라 욕조!</b>(영문명 Bathtub <span class="nw">Blastoff)는</span> 개인 개발자(Hoppang)가 만든 무료 브라우저 게임입니다. 이 문서에서 ‘개발자’는 날아라 욕조! 개발자를 말합니다. 게임을 하는 동안 정보가 어떻게 다뤄지는지 안내해 드립니다.</p>
+
+      <section class="short" aria-labelledby="short">
+        <h2 id="short">한눈에 보기</h2>
+        <ul>
+          <li>계정이 없습니다. 회원가입도, 로그인도, 채팅도 없습니다.</li>
+          <li>진행 상황과 설정은 이용자 기기의 브라우저에만 저장됩니다.</li>
+          <li>게임은 개발자에게 아무것도 보내지 않습니다. 자체 분석 도구도, 자체 쿠키도, 자체 네트워크 요청도 없습니다.</li>
+          <li>게임을 하는 사이트(예: Poki, CrazyGames, Playgama)는 광고·통계·계정을 자체 개인정보처리방침에 따라 운영합니다.</li>
+        </ul>
+      </section>
+
+      <section id="device">
+        <h2><span class="n">1</span>기기에 저장되는 정보</h2>
+        <p>게임은 진행 상황과 설정(코인, 업그레이드, 기록, 언어, 볼륨, 접근성 옵션)을 이용자 기기의 브라우저 로컬 스토리지(localStorage)에 저장합니다. 저장 키는 <code>bathtub-blastoff/</code>로 시작하며, 주로 <code>bathtub-blastoff/v1</code>과 <code>bathtub-blastoff/meta</code>를 씁니다. 이 정보는 브라우저 안에만 머무릅니다. 게임이 개발자에게 보내지 않으므로 개발자는 이 정보를 볼 수 없습니다.</p>
+        <p>브라우저가 저장을 막는 경우(일부 시크릿·비공개 모드 등)에도 게임은 할 수 있지만, 진행 상황은 그 세션 동안만 유지됩니다.</p>
+        <p>클라우드 저장을 제공하는 포털(예: Playgama, YouTube Playables, CrazyGames 계정)에서는 진행 상황이 그 포털의 정책에 따라 포털에 저장될 수 있습니다.</p>
+      </section>
+
+      <section id="collect">
+        <h2><span class="n">2</span>개발자가 수집하는 정보</h2>
+        <p><b>없습니다.</b> 개발자는 개인정보를 수집하지 않습니다.</p>
+        <ul>
+          <li>계정 기능이 없습니다. 회원가입, 로그인, 프로필, 채팅, 이용자 제작 콘텐츠가 모두 없습니다.</li>
+          <li>게임은 스스로 네트워크 요청을 하지 않습니다. 그림과 음악은 모두 이용자 기기에서 코드로 만들어집니다.</li>
+          <li>자체 쿠키를 쓰지 않고, 자체 분석 도구도 없습니다.</li>
+        </ul>
+        <p>개발자가 이용자에 관한 정보를 받는 경우는 이용자가 직접 이메일을 보낼 때뿐입니다. 자세한 내용은 <a href="#email">이메일로 문의하실 때</a>를 참고해 주세요.</p>
+      </section>
+
+      <section id="portals">
+        <h2><span class="n">3</span>게임을 하는 사이트(포털·플랫폼)</h2>
+        <p>날아라 욕조!는 Poki, CrazyGames, Playgama 같은 게임 포털과 플랫폼을 통해 제공됩니다. Playgama를 통해 YouTube Playables에도 제공될 수 있으며, 앞으로 토스 등 다른 플랫폼이 추가될 수 있습니다. 이 사이트들은 각각 다른 회사가 운영합니다.</p>
+        <p>광고, 분석·통계, 계정, 클라우드 저장, 결제는 개발자가 아니라 이 파트너들이 각자의 약관과 개인정보처리방침에 따라 제공합니다. 어떤 정보를 왜 수집하는지는 게임을 하는 사이트의 개인정보처리방침에서 확인해 주세요.</p>
+        <ul class="policies">
+          <li>Poki — <a href="https://poki.com/en/privacy">poki.com/en/privacy</a> (Privacy Center)</li>
+          <li>CrazyGames — <a href="https://www.crazygames.com/privacy-policy">crazygames.com/privacy-policy</a></li>
+          <li>Playgama — <a href="https://playgama.com/confidential">playgama.com/confidential</a></li>
+          <li>YouTube Playables — <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a></li>
+        </ul>
+      </section>
+
+      <section id="purchases">
+        <h2><span class="n">4</span>광고와 결제</h2>
+        <p>광고는 개발자가 아니라 포털·플랫폼이 보여 줍니다. 보상형 광고는 언제나 선택 사항이며, 이용자가 그 광고를 보겠다는 버튼을 눌렀을 때만 재생됩니다.</p>
+        <p>플랫폼이 선택형 인게임 구매(예: 골드 티켓)를 제공하는 경우 결제는 그 플랫폼이 처리하며, 개발자는 결제 정보를 볼 수 없습니다. 게임을 진행하는 데 현금 결제는 필요하지 않습니다.</p>
+      </section>
+
+      <section id="children">
+        <h2><span class="n">5</span>아동</h2>
+        <p>게임 내용은 대체로 온 가족이 즐길 수 있는 수준입니다. 만화 같은 슬랩스틱이며, 피 표현·도박·채팅이 없습니다. 개발자는 아동을 포함해 누구의 개인정보도 의도적으로 수집하지 않습니다.</p>
+        <p>각 포털의 광고와 데이터 처리는 그 포털의 아동 보호·개인정보 정책(예: 연령에 맞는 광고)을 따릅니다. 보호자께서는 아이가 게임을 하는 사이트의 정책을 확인해 주세요. 아이가 이메일로 개인정보를 보냈다고 생각되시면 알려 주세요. 삭제하겠습니다.</p>
+      </section>
+
+      <section id="email">
+        <h2><span class="n">6</span>이메일로 문의하실 때</h2>
+        <p>개발자에게 이메일을 보내시면 개발자는 보내신 분의 이메일 주소와 메일에 담긴 내용(스크린샷, 기기 정보 등)을 받게 됩니다. 이 정보는 답장과 게임 문제 해결에만 쓰며, 판매하거나 다른 곳에 제공하지 않고, 그 목적에 더 이상 필요하지 않으면 삭제합니다. 보내신 메일은 언제든지 삭제를 요청하실 수 있습니다. 문의 주소는 <a href="mailto:hoppangdev@gmail.com">hoppangdev@gmail.com</a>입니다.</p>
+      </section>
+
+      <section id="delete">
+        <h2><span class="n">7</span>데이터 삭제</h2>
+        <ul>
+          <li><b>게임에서:</b> 목욕탕 게시판 → 설정 → ‘진행 초기화’를 누르면 그 기기의 코인·부품·스테이지·트로피·티켓이 지워집니다. 언어와 볼륨 설정은 그대로 남습니다.</li>
+          <li><b>브라우저에서:</b> 브라우저 설정에서 게임을 하는 사이트의 사이트 데이터(쿠키 및 기타 사이트 데이터)를 삭제하면 게임이 그 브라우저에 저장한 내용이 지워집니다. 이때 그 사이트의 다른 데이터도 함께 지워지므로 포털에서 로그아웃될 수 있습니다.</li>
+          <li><b>클라우드 저장:</b> 포털 계정에 저장된 진행 상황은 그 포털에서 삭제해 주세요.</li>
+        </ul>
+        <p>개발자는 게임 데이터 사본을 갖고 있지 않으므로 개발자 쪽에서 따로 삭제할 것은 없습니다. 개발자에게 보내신 이메일만 예외입니다.</p>
+      </section>
+
+      <section id="changes">
+        <h2><span class="n">8</span>방침의 변경</h2>
+        <p>게임이 바뀌어 이용자 데이터에 영향을 주는 경우(예: 정보를 어딘가로 보내는 기능이 생기는 경우), 그 변경을 적용하기 전에 이 페이지와 맨 위의 날짜를 먼저 고칩니다.</p>
+      </section>
+
+      <section id="contact">
+        <h2><span class="n">9</span>문의처</h2>
+        <p>이 방침이나 개인정보 보호에 관한 문의는 날아라 욕조! 개발자에게 이메일로 보내 주세요: <a href="mailto:hoppangdev@gmail.com">hoppangdev@gmail.com</a></p>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p><b>날아라 욕조!</b>는 개인 개발자(Hoppang)가 만듭니다. 문의: <a href="mailto:hoppangdev@gmail.com">hoppangdev@gmail.com</a></p>
+      <p><a href="index.html">전체 페이지</a> · <a href="privacy.html" hreflang="en" lang="en">English</a></p>
+    </footer>
+  </body>
+</html>
