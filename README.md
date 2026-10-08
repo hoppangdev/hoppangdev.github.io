@@ -13,3 +13,5 @@ The illustration is a concept, not gameplay. The project is in local prototype d
 The main studio portfolio is maintained separately in `hoppangdev/hoppangdev-site` at https://hoppangdev.shop/.
 
 GitHub Pages publishes the static files from this repository's existing main branch. No build tool or package installation is required. Check internal links, both languages and narrow/wide screens before publishing.
+
+Bathtub Blastoff and Little Beginnings now have bilingual introductions using shared `game-info.css`. The main index uses the same three-game card interface. Little Beginnings is an unfinished Korean alpha; no public play or downloads are offered. Game source and playable bundles stay local. Only static introduction pages, concept artwork, and the existing support/legal documents belong in this public repository.
